@@ -1,0 +1,448 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Interior Mobilya| Yaşam için...</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Hover -->
+    <link href="assets/css/style_common.css" rel="stylesheet">
+    <link href="assets/css/style1.css" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+<body class="index" id="page-top">
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav" style="background-color: white;">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" title="İnterior Mobilya Logo" alt="interior-mobilya-logo" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarExample">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Showroom</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="tab-nav" class="container-fluid">
+        <div class="tab container">
+            <button class="tablinks buton" id="defaultOpen" onclick="openProduct(event, 'All')">All</button>
+            <button class="tablinks buton" onclick="openProduct(event, 'Home')">Home</button>
+            <button class="tablinks buton" onclick="openProduct(event, 'Office')">Office</button>
+            <button class="tablinks buton" onclick="openProduct(event, 'Furniture')">Furniture</button>
+            <button class="tablinks buton" onclick="openProduct(event, 'Modern')">Modern</button>
+            <button class="tablinks buton" onclick="openProduct(event, 'Classic')">Classic</button>
+        </div>
+    </section>
+
+    <section id="product-detail" class="container">
+        <div class="row">
+            <div id="product-img" class="col-md-6 col-xs-12 col-lg-6 col-sm-12">
+                <div id="img-top" class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div id="image1" class="detailstabcontent">
+                            <img src="assets/img/product-details-1.png" />
+                        </div>
+
+                        <div id="image2" class="detailstabcontent">
+                            <img src="assets/img/product-details-2.png" />
+                        </div>
+
+                        <div id="image3" class="detailstabcontent">
+                            <img src="assets/img/product-details-3.png" />
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="img-bottom" class="row">
+                    <div class="col-md-12 ">
+                        <div class="detailstab">
+                            <input type="image" name="btnResim" src="assets/img/product-details-1.png" class="detailstablinks" onclick="openProductDetail(event, 'image1')" id="defaultProduct" />
+
+                            <input type="image" name="btnResim" src="assets/img/product-details-2.png" class="detailstablinks" onclick="openProductDetail(event, 'image2')" />
+
+                            <input type="image" name="btnResim" src="assets/img/product-details-3.png" class="detailstablinks" onclick="openProductDetail(event, 'image3')" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="product-text" class="col-md-6 col-xs-12 col-lg-6 col-sm-12">
+
+                <p id="detail-type">Fishnet Chair</p>
+                <p id="detail-color">Hot Deal</p>
+                <p id="detail-money"> $ <b>36.7</b> / sq</p>
+                <button>Order Us</button>
+                <div id="detail-content">
+                    <p>
+                        Nullam vitae ante purus. Quisque quis mattis lacus, condimentum blandit lacus.
+                    </p>
+                    <p>Aliquam diam risus, posuere non lacinia tempor, porttitor ac purus. Maecenas ligula nibh, dictum eget felis mollis, feugiat aliquam lorem. Nullam a mollis massa. Praesent vitae iaculis purus.</p>
+
+                    <p>Nullam urna dolor, consequat in leo nec, aliquam eleifend magna. Nullam convallis dapibus porta. Aliquam nisl metus, semper eu justo vitae, tincidunt cursus metus. Nullam vitae ante purus. Quisque quis mattis lacus, condimentum blandit lacus.</p>
+                    <p>
+                        Donec pulvinar facilisis eros, eu varius augue maximus sit amet. Nam malesuada egestas faucibus. Curabitur at maximus enim.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                <span class="trending-products">Trending Products</span>
+            </div>
+            <div class="pull-right col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                <span class="pull-right explore-all">Explore All <i class="fa fa-chevron-right" aria-hidden="true"></i> </span>
+            </div>
+        </div>
+    </section>
+    <div id="All" class="tabcontent container">
+        <div class="row">
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-6.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-9.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-7.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-8.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-10.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-11.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="Home" class="tabcontent container">
+        <div class="row">
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-7.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-8.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Office" class="tabcontent container">
+        <div class="row">
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-7.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-8.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Furniture" class="tabcontent container">
+        <div class="row">
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-6.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-7.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-8.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-9.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-10.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-11.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Modern" class="tabcontent container">
+        <div class="row">
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-6.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-9.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-10.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-11.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Classic" class="tabcontent container">
+        <div class="row">
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-6.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-7.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-8.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-9.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-10.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+            <div class="trending-product col-md-3 col-xs-6 col-lg-4 col-sm-6 view view-first">
+                <img src="assets/img/alt-11.png">
+                <div class="mask ">
+                    <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <p>Fishnet Chair</p>
+                    <span>seat and back with upholstery made of  cold cure foam.Steelframe.available in matt powder-coated black</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container">
+        <div id="footer-top" class="row">
+            <div id="footer-top-one" class="col-md-3 col-lg-3 col-sm-3 col-xs-12 ">
+                <h3>Contact Us</h3>
+                <p>132A Bridge Road Richmond VIC Australia.</p>
+                <p><a href="tel:1300-132">Talk to us on 1300 132</a></p>
+                <p><a href="mailto:info@interior.com">info@interior.com</a></p>
+            </div>
+            <div id="footer-top-two" class="col-md-5 col-lg-5 col-sm-5 col-xs-12 ">
+                <h3>UseFul Information</h3>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 ">
+                        <ul>
+                            <li>Sales Terms</li>
+                            <li>Customer Care</li>
+                            <li>Delivery</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 ">
+                        <ul>
+                            <li>Archıtect Accounts</li>
+                            <li>Careers</li>
+                            <li>Exchanges &amp; Returns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-top-three" class="col-md-4 col-lg-4 col-sm-4 col-xs-12 ">
+                <h3>Let's stay ın touch!</h3>
+                <p>
+                    Suscribe to know about our latest news, products and special offers just for suscribers.
+                </p>
+                <div class="input-group">
+                    <input type="text" placeholder="your email address" class="email-box">
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom" class="row">
+            <div id="footer-bottom-one" class="col-md-4 col-lg-4 col-sm-4 col-xs-12 ">
+                <p>
+                    © Copyright - INTERIOR 2017. ALL RIGHTS RESERVED.
+                </p>
+            </div>
+            <div id="footer-bottom-two" class="col-md-4 col-lg-4 col-sm-4 col-xs-12 ">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-google-plus"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-linkedin"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-dribbble"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer-bottom-three" class="col-md-4 col-lg-4 col-sm-4 col-xs-12 ">
+                <p>Term &amp; conditions / privacy policy &amp; cookies</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="assets/js/freelancer.min.js"></script>
+    <!-- Tab Menü js-->
+    <script src="assets/js/tab.js"></script>
+</body>
+</html>
